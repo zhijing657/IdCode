@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/company_logo_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            app:srcCompat="@mipmap/lcy"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/company_info_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="“雪利酒”是由西班牙语Jerez的音译化而来，在西班牙，它的名字应该是“赫雷斯”酒。而和很多的欧洲名酒的得名规律一样，它也以产地得名。“赫雷斯”是位于西班牙南部海岸的一个小镇，小镇附近富含石灰质的土壤，适于生长品种葡萄巴洛米诺（Palomine），这种白葡萄即为雪利酒的原料。
+它曾被莎士比亚比喻作「装在瓶子里的西班牙阳光」，可想而知它将带给我们如西班牙阳光般灿烂的欢愉感受，然而若无神奇的Flor与索雷拉（Solera）系统，雪莉酒将只是平淡无奇的白葡萄酒。在西班牙南部安达鲁西亚地方（Andalucia ），面向卡堤兹海湾之处，就是雪莉酒的出产地。
+酿造雪莉酒主要以Palomino葡萄为主，另外两个品种是Moscatel Grodo Blanco，以及制造甜酒的PedroXimenez（简称PX），葡萄具有丰富的天然糖分，使酿出的酒又黑又稠又甜。" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#eee"
+        android:layout_marginBottom="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#eee"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="企业名称："
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/company_name_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:text="赵县雪莉酒"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="联系人："
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/company_contacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:text="麦克"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="联系电话："
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/phone_to_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:text="15623659871"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="企业地址："
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/company_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:text="河北省石家庄市新华区"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#eee"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

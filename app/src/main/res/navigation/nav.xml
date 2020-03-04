@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homePageFrameFragment">
+
+    <fragment
+        android:id="@+id/shoppingCartFrameFragment"
+        android:name="com.zhijing.shoppingcenter.ShoppongCart.ShoppingCartFrameFragment"
+        android:label="购物车"
+        tools:layout="@layout/gwc_frame_fragment">
+        <action
+            android:id="@+id/action_shoppingCartFrameFragment_to_homePageFrameFragment"
+            app:destination="@id/homePageFrameFragment"
+            app:enterAnim="@animator/translation_to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFrameFragment"
+        android:name="com.zhijing.shoppingcenter.HomePage.home.HomePageFrameFragment"
+        android:label="首页"
+        tools:layout="@layout/hg_frame_fragment" >
+        <action
+            android:id="@+id/action_homePageFrameFragment_to_typeFrameFragment"
+            app:destination="@id/typeFrameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalCenterFrameFragment"
+        android:name="com.zhijing.shoppingcenter.PersonalCenter.PersonalCenterFrameFragment"
+        android:label="个人中心"
+        tools:layout="@layout/mine_frame_fragment" />
+    <fragment
+        android:id="@+id/newsFrameFragment"
+        android:name="com.zhijing.shoppingcenter.News.NewsFrameFragment"
+        android:label="消息"
+        tools:layout="@layout/news_frame_fragment" />
+    <fragment
+        android:id="@+id/typeFrameFragment"
+        android:name="com.zhijing.shoppingcenter.Type.TypeFrameFragment"
+        android:label="分类"
+        tools:layout="@layout/type_frame_fragment" />
+</navigation>

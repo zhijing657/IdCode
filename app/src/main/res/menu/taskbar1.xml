@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homePageFrameFragment"
+        android:icon="@drawable/home"
+        android:title="主页" />
+    <item
+        android:id="@+id/typeFrameFragment"
+        android:icon="@drawable/type"
+        android:title="分类" />
+    <item
+        android:id="@+id/newsFrameFragment"
+        android:icon="@drawable/messge"
+        android:title="消息中心" />
+    <item
+        android:id="@+id/shoppingCartFrameFragment"
+        android:icon="@drawable/gwc"
+        android:title="购物车" />
+    <item
+        android:id="@+id/personalCenterFrameFragment"
+        android:icon="@drawable/person"
+        android:title="个人" />
+</menu>

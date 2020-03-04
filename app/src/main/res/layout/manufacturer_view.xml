@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Manufacturer_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:text="设备生产商："
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/manufacturer_name"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江苏华控环保设备有限公司"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center|right"
+            android:text="生产商地址："
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/manufacturer_location"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江苏镇江丹阳市界牌镇界中武阳工业园"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center|right"
+            android:text="    联系方式："
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/manufacturer_phone"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15365988772"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center|right"
+            android:text="生产商简介："
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/manufacturer_info"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江苏华控环保设备有限公司座落在美丽的镇江丹阳市, 我公司注重于产品研发、设计、制造、安装调试及服务为一体化的科技创业型公司。我公司秉承科技创新的理念，让自动化融入到我公司生产的设备中，让用户更简单更直观的使用设备掌握运行数据。我公司主要生产恒压变频供水设备，反渗透设备，污水处理设备与工业机器人等等，用户的需求是我们的追求，用户的满意是我们的心愿。我们团队将会给用户提供设计方案，让设备更稳定高效的为用户生产。"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

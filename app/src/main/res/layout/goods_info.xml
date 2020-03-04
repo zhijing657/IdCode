@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".app.GoodsInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:id="@+id/ib_good_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bar_left_back"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品详情"
+            android:textColor="#564c4c"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/ib_good_info_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_more"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhijing.shoppingcenter.app.ScrollViewContainer
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_good_info_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="700dp"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/tv_good_info_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="【预售】《来年就交给你啦》珍藏画册 限量礼盒版"
+                            android:textColor="#323427"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_good_info_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="预售截止10月15日，预售期为限量礼盒版，包括特制木盒x1、画集x1、邮票x1套、书签x1、贴纸x1、信封x1、礼盒特"
+                            android:textColor="#767f86" />
+
+                        <TextView
+                            android:id="@+id/tv_good_info_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="￥150.00"
+                            android:textColor="#ed3f3f"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#eeee" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="由"
+                                android:textColor="#3c3d40" />
+
+                            <TextView
+                                android:id="@+id/tv_good_info_store"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="尚硅谷"
+                                android:textColor="#ff4040" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="发货"
+                                android:textColor="#3c3d40" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="#eeee" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="味道：" />
+
+                                    <TextView
+                                        android:id="@+id/tv_good_info_tease"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="原味"
+                                        android:textColor="#000" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="规格：" />
+
+                                    <TextView
+                                        android:id="@+id/tv_good_info_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="28瓶/箱"
+                                        android:textColor="#000" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="保质期：" />
+
+                                    <TextView
+                                        android:id="@+id/tv_good_info_bad_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="730天"
+                                        android:textColor="#000" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/goods_info_style_logo"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@mipmap/lcy" />
+
+                                <TextView
+                                    android:id="@+id/goods_info_taste_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="原味" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"></LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="#eeee" />
+
+                        <TextView
+                            android:id="@+id/tv_good_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="提示：普通商品享有质量问题7天退货，签收后3个工作日内可换货。其他特殊商品的售后以页面说明为准"
+                            android:textColor="#3c3d40" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="#eeee" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/tv_good_company_logo"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:srcCompat="@mipmap/lcy" />
+
+                            <TextView
+                                android:id="@+id/company_info_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="农夫山泉股份有限公司是中国饮料20强之一，专注于研发、推广饮用天然水、果蔬汁饮料、特殊用途饮料和茶饮料等各类软饮料。"
+                                android:textColor="#000" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="企业名称："
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/tv_good_company_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="农夫山泉有限公司"
+                                android:textColor="#000"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="    联系人："
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/tv_good_company_people"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="王先生"
+                                android:textColor="#000"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="联系电话："
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/tv_good_company_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="86-0571-86032866"
+                                android:textColor="#000"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="企业地址："
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/tv_good_company_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="浙江杭州市中国下沙经济技术开发区10号路"
+                                android:textColor="#000"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="#eeee"
+                            android:layout_marginBottom="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="图文详情"
+                            android:textColor="#3c3d40"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ed3f3f" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <WebView
+                        android:id="@+id/wb_good_info_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></WebView>
+
+                </ScrollView>
+
+            </com.zhijing.shoppingcenter.app.ScrollViewContainer>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_goods_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#EEE">
+
+            <TextView
+                android:id="@+id/tv_good_info_callcenter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_callserver_unpressed"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="联系客服"
+                android:textColor="#393b3e"
+                android:layout_gravity="center|bottom"/>
+
+            <TextView
+                android:id="@+id/tv_good_info_collection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/good_uncollected"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="收藏"
+                android:textColor="#393b3e"
+                android:layout_gravity="center|bottom"/>
+
+
+            <TextView
+                android:id="@+id/tv_good_info_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_good_detail_cart"
+                android:gravity="center"
+                android:layout_gravity="center|bottom"
+                android:padding="2dp"
+                android:text="购物车"
+                android:textColor="#393b3e" />
+
+            <Button
+                android:id="@+id/btn_good_info_addcart"
+                android:layout_width="120dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center"
+                android:background="@drawable/add_cart_bg_selector"
+                android:gravity="center"
+                android:text="加入购物车"
+                android:textColor="#fff"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <include layout="@layout/more_layout" />
+    </FrameLayout>
+
+</LinearLayout>
